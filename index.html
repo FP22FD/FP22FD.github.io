@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/scripts.js"></script>
+</head>
+
+<body>
+    <!----------------------------- header section ----------------------------->
+    <header class="sticky">
+        <button id="openMenu">&#9776</button>
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="#">HOME</a>
+            <a href="#about-me">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#filter">PROJECTS</a>
+            <a href="#contact" class="active">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <!----------------------------- featured section ----------------------------->
+        <div id="about">
+            <div class="card-profile-box">
+
+                <div style="position: relative;">
+                    <div class="bg-img"></div>
+                    <img id="hero-img" src="./assets/img/profile-img.png" alt="Fernanda's image profile">
+                </div>
+
+                <!--  -->
+                <div class="card-container-txt">
+                    <div class="card-profile-txt">
+                        <h2>Fernanda Gomes</h2>
+                        <p>Front-End Developer</p>
+                        <p>oslo, Norway</p>
+                    </div>
+                </div>
+
+                <div class="social-icons">
+                    <div>
+                        <a href="#"><img src="./assets/icons/linkedin.png" alt="icon Linkedin"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./assets/icons/github.png" alt="icon HTML"></a>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------- about section ----------------------------->
+            <div class="container-about">
+                <div id="about-me" class="about">
+                    <h1>ABOUT ME</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters, as opposed to using
+                        'Content here, content here', making it look like readable English. Many desktop publishing
+                        packages and web page
+                        editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+                        uncover many web sites
+                        still in their infancy. Various versions have evolved over the years, sometimes by accident,
+                        sometimes on purpose
+                        (injected humour and the like).</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters, as opposed to using
+                        'Content here, content here', making it look like readable English. Many desktop publishing
+                        packages and web page
+                        editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+                        uncover many web sites
+                        still in their infancy. Various versions have evolved over the years, sometimes by accident,
+                        sometimes on purpose
+                        (injected humour and the like).</p>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters, as opposed to using
+                        'Content here, content here', making it look like readable English.</p>
+                </div>
+                <!----------------------------- skills section ----------------------------->
+                <section id="skills" class="my-skill">
+                    <h3 class="skill-header">SKILLS</h3>
+                    <div class=" icon-collection">
+                        <div><img src="./assets/icons/html-5.png" alt="icon HTML"><span>HTML</span>
+                        </div>
+                        <div><img src="./assets/icons/css-3.png" alt="icon CSS"><span>CSS</span></div>
+                        <div><img src="./assets/icons/javascript.png" alt="icon Javascript"><span>Javascript</span>
+                        </div>
+                        <div><img src="./assets/icons/figma.png" alt="icon Figma"><span>Figma</span></div>
+                        <div><img src="./assets/icons/visual-studio-code-icon.png" alt="icon VS code"><span>VS
+                                code</span>
+                        </div>
+                        <div><img src="./assets/icons/github.png" alt="icon GitHub"><span>GitHub</span></div>
+                        <div><img src="./assets/icons/postman-icon.png" alt="icon Postman"><span>Postman</span></div>
+                        <div><img src="./assets/icons/wordpress-icon.png" alt="icon WordPress"><span>Wordpress</span>
+                        </div>
+                        <div><img src="./assets/icons/trello-icon.png" alt="icon Trello"><span>Trello</span></div>
+                        <div><img src="./assets/icons/Local-by-Flywheel-on-Windows-10.png"
+                                alt="icon Local"><span>Local</span></div>
+                        <div><img src="./assets/icons/api.png" alt="icon API"><span>API</span></div>
+                        <div><img src="./assets/icons/ux.png" alt="icon UX-UI"><span>UX - UI</span></div>
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+        <!----------------------------- project section ----------------------------->
+        <section id="article">
+            <div class="filter" id="filter">
+                <button class="btnFilter active" data-tags="all">ALL</button>
+                <button class="btnFilter" data-tags="html-css">HTML and CSS</button>
+                <button class="btnFilter" data-tags="javascript">JAVASCRIPT</button>
+            </div>
+
+            <div class="card-project" data-tags="all html-css">
+
+                <div class="info">
+                    <h2>RAINDAYS WEBSITE</h2>
+                    <div class="project-tags">
+                        <p>Made with:</p>
+                        <img class="icon" width="40" height="40" src="./assets/icons/html-5.png" alt="icon HTML">
+                        <img class="icon" width="40" height="40" src="./assets/icons/css-3.png" alt="icon CSS">
+                        <img class="icon" width="40" height="40" src="./assets/icons/javascript.png"
+                            alt="icon Javascript">
+                    </div>
+
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters, as opposed to using
+                        'Content here, content here', making it look like readable English. Many desktop publishing
+                        packages and web page
+                        editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+                        uncover many web sites
+                        still in their infancy. Various versions have evolved over the years, sometimes by accident,
+                        sometimes on purpose
+                        (injected humour and the like).</p>
+
+                    <div class="social-icons">
+                        <div class="project-link github">
+                            <a
+                                href="https://github.com/FP22FD/raindays-website-Interaction-Design-CA/blob/improvements/README.md">
+                                <img src="./assets/icons/Ellipse -_ github.png" alt="icon HTML"><span>GitHub</span>
+                            </a>
+                        </div>
+
+                        <div class="project-link">
+                            <a href="https://improvements--glistening-hummingbird-317e80.netlify.app/">
+                                <img src="./assets/icons/internet.png" alt="icon Linkedin"><span>Website</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex;width: 100%;">
+                    <img src="./assets/img/profile-img.png" alt="Fernanda's image profile" style="object-fit: contain;
+width: 100%;min-width:400px">
+                </div>
+
+            </div>
+
+            <div class="card-project" data-tags="all html-css javascript">
+
+                <div class="info">
+                    <h2>COMMUNITY SCIENCE MUSEUM</h2>
+                    <div class="project-tags">
+                        <p>Made with:</p>
+                        <img class="icon" width="40" height="40" src="./assets/icons/html-5.png" alt="icon HTML">
+                        <img class="icon" width="40" height="40" src="./assets/icons/css-3.png" alt="icon CSS">
+                    </div>
+
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters, as opposed to using
+                        'Content here, content here', making it look like readable English. Many desktop publishing
+                        packages and web page
+                        editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+                        uncover many web sites
+                        still in their infancy. Various versions have evolved over the years, sometimes by accident,
+                        sometimes on purpose
+                        (injected humour and the like).</p>
+
+                    <div class="social-icons">
+                        <div class="project-link github">
+                            <a href="https://github.com/FP22FD/Community-Science-Museum-SP1-CA/blob/main/README.md">
+                                <img src="./assets/icons/Ellipse -_ github.png" alt="icon HTML"><span>GitHub</span>
+                            </a>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://shimmering-peony-58cb28.netlify.app/">
+                                <img src="./assets/icons/internet.png" alt="icon Linkedin"><span>Website</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex;width: 100%;">
+                    <img src="./assets/img/profile-img.png" alt="Fernanda's image profile" style="object-fit: contain;
+            width: 100%;min-width:400px">
+                </div>
+
+            </div>
+
+            <div class="card-project" data-tags="all html-css">
+
+                <div class="info">
+                    <h2>AMIGUME</h2>
+                    <div class="project-tags">
+                        <p>Made with:</p>
+                        <img class="icon" width="40" height="40" src="./assets/icons/html-5.png" alt="icon HTML">
+                        <img class="icon" width="40" height="40" src="./assets/icons/css-3.png" alt="icon CSS">
+                        <img class="icon" width="40" height="40" src="./assets/icons/javascript.png"
+                            alt="icon Javascript">
+                    </div>
+
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its
+                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                        letters, as opposed to using
+                        'Content here, content here', making it look like readable English. Many desktop publishing
+                        packages and web page
+                        editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will
+                        uncover many web sites
+                        still in their infancy. Various versions have evolved over the years, sometimes by accident,
+                        sometimes on purpose
+                        (injected humour and the like).</p>
+
+                    <div class="social-icons">
+                        <div class="project-link github">
+                            <a
+                                href="https://github.com/Noroff-FEU-Assignments/project-exam-1-FP22FD/blob/main/README.md">
+                                <img src="./assets/icons/Ellipse -_ github.png" alt="icon HTML"><span>GitHub</span>
+                            </a>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://spectacular-smakager-27e9f9.netlify.app/">
+                                <img src="./assets/icons/internet.png" alt="icon Linkedin"><span>Website</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-img">
+                    <img src="./assets/img/profile-img.png" alt="Fernanda's image profile">
+                </div>
+
+            </div>
+
+        </section>
+        <!----------------------------- contact section ----------------------------->
+        <section id="contact" class="contact-container">
+            <div>
+                <div class="bg-contact"></div>
+                <div class="contact-header">
+                    <a href="mailto:fernandapg82@gmail.com">
+                        <h2>CONTACT</h2>
+                    </a>
+                </div>
+            </div>
+            <p>Email</p>
+            <small>fernandapg82@gmail.com</small>
+        </section>
+    </main>
+    <!----------------------------- footer section ----------------------------->
+    <footer>
+        <div>
+            <small>Copyright&copy; 2023 Fernanda Gomes. All Rights Reserved</small>
+        </div>
+    </footer>
+</body>
+
+</html>
