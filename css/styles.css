@@ -459,6 +459,17 @@ nav a {
   background: var(--blue-color);
 }
 
+.project-screenshot {
+  display: flex;
+  width: 100%;
+}
+
+.project-screenshot img {
+  object-fit: contain;
+  width: 100%;
+  min-width: 400px;
+}
+
 /* --------Contact section---------- */
 
 .contact-container {
