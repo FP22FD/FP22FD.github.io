@@ -186,6 +186,14 @@ section {
   margin-top: var(--space-l);
 }
 
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
 /* a:hover,
 a:hover * {
   transition: all 0.3s ease;
@@ -275,6 +283,14 @@ nav a {
   width: 300px;
   height: 281px;
   /* position: absolute; */
+
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+#hero-img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 
 .bg-img {
@@ -395,8 +411,8 @@ nav a {
 /* -------projects section--------- */
 
 .card-project {
-  /* background: var(--off-white-color); */
-  background: linear-gradient(to right, rgb(226 224 224) 0%, rgb(145 185 202) 100%);
+  background: var(--off-white-color);
+  /* background: linear-gradient(to right, rgb(226 224 224) 0%, rgb(145 185 202) 100%); */
 
   display: flex;
   flex-direction: row;
@@ -413,19 +429,19 @@ nav a {
   padding: 8px;
 }
 
-.card-project .box-img {
+/* .card-project .box-img {
   display: flex;
   width: 100%;
-}
+} */
 
 .card-project img {
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
 .card-project h2 {
   align-self: center;
-  width: 100%;
-  min-width: 400px;
+  /* width: 100%; */
+  /* min-width: 400px; */
 }
 
 .project-tags {
@@ -461,6 +477,7 @@ nav a {
 
 .project-screenshot {
   display: flex;
+  align-items: flex-end;
   width: 100%;
 }
 
@@ -468,6 +485,8 @@ nav a {
   object-fit: contain;
   width: 100%;
   min-width: 400px;
+
+  padding: 8px;
 }
 
 /* --------Contact section---------- */
