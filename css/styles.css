@@ -2,35 +2,35 @@
   font-family: "Playfair Display";
   font-size: normal;
   font-weight: 400;
-  src: url("/assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
 }
 
 @font-face {
   font-family: "Playfair Display";
   font-size: normal;
   font-weight: 600;
-  src: url("/assets/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Playfair Display";
   font-size: normal;
   font-weight: 700;
-  src: url("/assets/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf");
 }
 
 @font-face {
   font-family: "Lora";
   font-size: normal;
   font-weight: 400;
-  src: url("/assets/fonts/Lora/static/Lora-Regular.ttf");
+  src: url("/fonts/Lora/static/Lora-Regular.ttf");
 }
 
 @font-face {
   font-family: "Nunito Sans";
   font-size: normal;
   font-weight: 400;
-  src: url("/assets/fonts/Nunito_Sans/static/NunitoSans_10pt-Regular.ttf");
+  src: url("/fonts/Nunito_Sans/static/NunitoSans_10pt-Regular.ttf");
 }
 
 /* -----------Variables------------- */
