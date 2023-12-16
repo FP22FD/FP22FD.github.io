@@ -1,0 +1,40 @@
+/* --------skills section---------- */
+
+.my-skill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.my-skill > div img {
+  display: flex;
+  /* height: 64px; */
+}
+
+.skill-header {
+  /* text-align: center; */
+  margin-top: var(--space-xs);
+  align-self: center;
+}
+
+.icon-collection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 8px;
+  padding: 8px;
+}
+
+.icon-collection > div {
+  text-align: center;
+}
+
+/* screen from 375px to 716px */
+@media only screen and (max-width: 717px) {
+  .icon-collection > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

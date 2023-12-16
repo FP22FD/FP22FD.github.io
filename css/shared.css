@@ -1,0 +1,133 @@
+/* ------------Shared---------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: var(--space-l);
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.active {
+  background: var(--dark-orange-color);
+}
+
+.active2 {
+  background: var(--blue-color);
+}
+
+.highlight {
+  background-size: 100% 8px;
+  background-position: 0% 100%;
+  background-image: linear-gradient(90deg, rgb(145, 185, 202), rgb(145, 185, 202));
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-out 0s;
+  text-decoration: none;
+  display: inline;
+}
+
+.highlight:hover {
+  background-size: 0 2px;
+  background-position: 100% 0%;
+  background-image: linear-gradient(90deg, rgb(145, 185, 202), rgb(145, 185, 202));
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-out 0s;
+  text-decoration: none;
+  display: inline;
+}
+
+.highlight:hover:hover {
+  background-size: 100% 2px;
+  background-position: 0 100%;
+}
+
+.focus {
+  background-size: 0 2px;
+  background-position: 0% 100%;
+  background-image: linear-gradient(90deg, rgb(145, 185, 202), rgb(145, 185, 202));
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-out 0s;
+  text-decoration: none;
+  display: inline;
+}
+
+.focus:hover {
+  background-size: 100% 2px;
+}
+
+.top {
+  position: fixed;
+  bottom: 50px;
+  right: 8px;
+  z-index: 99;
+  font-size: 40px;
+  border: 1px solid var(--border-grey-color);
+  outline: none;
+  background-color: transparent;
+  color: #212427;
+  cursor: pointer;
+  padding: 12px 12px 0px 12px;
+  line-height: 30px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px var(--light-grey-color);
+}
+.top:hover {
+  background-color: var(--dark-orange-color);
+}
+
+/* ---------Global icons----------- */
+.icon {
+  height: 64px;
+}
+
+.social-icons {
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* --------Global buttons---------- */
+
+/* screen from 375px to 716px */
+@media only screen and (max-width: 717px) {
+  main {
+    align-items: center;
+    margin: 24px;
+    border: 1px solid red;
+  }
+
+  .icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+}

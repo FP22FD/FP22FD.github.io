@@ -2,16 +2,11 @@
 
 document.querySelector("#openMenu").addEventListener("click", function () {
   let hamburger = document.querySelector("#menu");
-  if (hamburger.style.display === "flex") {
-    hamburger.style.display = "";
+  if (hamburger.style.display === "") {
+    hamburger.style.display = "none";
   } else {
     hamburger.style.display = "flex";
   }
-  // setTimeout(() => {
-  //   hamburger.style.display = "none";
-  // }, 2000);
-
-  // hamburger.style.display = "flex";
 });
 
 // -----------------------------------------------------------------------
@@ -23,8 +18,6 @@ function btnActive() {
 
   for (let i = 0; i < navMenu.length; i++) {
     navMenu[i].addEventListener("click", function (event) {
-      console.log("menu clicked!");
-
       for (let i = 0; i < navMenu.length; i++) {
         navMenu[i].classList.remove("active");
       }
@@ -32,7 +25,7 @@ function btnActive() {
       btnNav.classList.add("active");
 
       let hamburger = document.querySelector("#menu");
-      hamburger.style.display = "none";
+      hamburger.style.display = "";
     });
   }
 }
@@ -56,7 +49,6 @@ function functionFilter() {
       btn.classList.add("active");
 
       const selectedTags = btn.dataset.tags;
-      console.log(selectedTags);
 
       const prjs = document.querySelectorAll(".card-project");
       for (let i = 0; i < prjs.length; i++) {
@@ -79,15 +71,12 @@ functionFilter();
 // -----------------------------------------------------------------------
 
 // function to go up
-
 let btnTop = document.querySelector("#top");
 btnTop.addEventListener("click", goTop);
 
 window.onscroll = function () {
   scrollFunction();
 };
-
-// const sticky = header.offsetTop;
 
 function scrollFunction() {
   if (window.scrollY > 20) {
@@ -97,14 +86,8 @@ function scrollFunction() {
   }
 }
 
-// function goTop() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
-
 function goTop() {
   window.scrollTo(0, 0);
 }
 
 scrollFunction();
-// goTop();

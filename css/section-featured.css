@@ -1,0 +1,75 @@
+/* --------featured section-------- */
+
+.card-profile-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  gap: 24px;
+  padding-bottom: 1.25rem;
+  background: var(--light-orange-color);
+}
+
+.card-profile-box .social-icons {
+  gap: 8px;
+}
+
+#hero-img {
+  /* position: relative is needed to make z-index working */
+  position: relative;
+  z-index: 1;
+
+  /* width: 300px; */
+  height: 281px;
+  margin-top: var(--space-xl);
+  filter: grayscale(100%);
+}
+
+#hero-img:hover {
+  filter: none;
+}
+
+.bg-img {
+  position: absolute;
+
+  width: 300px;
+  height: 281px;
+  top: 0;
+  left: -24px;
+  background: var(--blue-color);
+}
+
+/* ------featured txt section------ */
+
+.card-profile-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-profile-txt h2 {
+  margin-bottom: var(--space-m);
+}
+
+.card-container-txt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+/* screen from 375px to 716px */
+@media only screen and (max-width: 717px) {
+  .bg-img {
+    width: 200px;
+    height: 188px;
+  }
+
+  #hero-img {
+    margin-top: 24px;
+    width: 200px;
+    height: 188px;
+  }
+}

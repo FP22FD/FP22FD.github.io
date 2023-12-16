@@ -1,0 +1,62 @@
+/* --------navigation bar---------- */
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+  margin: var(--space-xs);
+  font-family: "Nunito Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a {
+  margin: 3%;
+  font-size: 18px;
+  padding: 8px 24px;
+}
+
+#openMenu,
+#closeMenu {
+  border: none;
+  background: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0px 5px 0px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+/* screen from 375px to 716px */
+@media only screen and (max-width: 717px) {
+  #openMenu,
+  #closeMenu {
+    display: block;
+  }
+
+  #openMenu {
+    margin-left: auto;
+  }
+
+  #closeMenu {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+  }
+
+  nav {
+    position: fixed;
+    top: 100px;
+    right: 0;
+
+    flex-direction: column;
+    width: 100vw;
+    height: fit-content;
+    background: rgba(255, 255, 255, 1);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: none;
+    transition: 0.3s;
+  }
+}

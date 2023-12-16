@@ -1,0 +1,81 @@
+/* -------projects section--------- */
+
+.card-project {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+
+  padding: 1.25rem;
+  margin-top: var(--space-l);
+  background: var(--off-white-color);
+  /* background: linear-gradient(to right, rgb(226 224 224) 0%, rgb(145 185 202) 100%); */
+}
+
+.card-project .info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+
+.card-project h2 {
+  align-self: center;
+}
+
+.project-tags {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+  max-height: 56px;
+  padding: 8px;
+}
+
+.project-tags img {
+  height: 100%;
+}
+
+.project-tags p {
+  margin-bottom: 0;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+  padding: 8px;
+  border: 1px solid var(--border-grey-color);
+}
+
+.github {
+  background: var(--blue-color);
+}
+
+.project-screenshot {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.project-screenshot img {
+  object-fit: contain;
+
+  width: 100%;
+  /* min-width: 400px; */
+
+  /* padding: 8px; */
+}
+
+/* screen from 375px to 716px */
+@media only screen and (max-width: 717px) {
+  .card-project {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-screenshot img {
+    min-width: none;
+    margin-top: var(--space-l);
+  }
+}

@@ -1,0 +1,49 @@
+/* --------Contact section---------- */
+
+.contact-container {
+  display: flex;
+  position: relative;
+
+  padding: 1.25rem;
+  margin-top: var(--space-l);
+  background: var(--white-color);
+}
+
+.contact-container > div {
+  position: relative;
+}
+
+.contact-header {
+  z-index: 2;
+  position: relative;
+  left: 1px;
+
+  margin: var(--space-s);
+  border: 2px solid var(--border-grey-color);
+  background-color: var(--off-white-color);
+}
+
+.contact-header h2 {
+  margin: 0;
+  padding: 16px;
+
+  height: 66px;
+}
+
+.bg-contact {
+  position: absolute;
+
+  width: 228px;
+  height: 66px;
+
+  left: 24px;
+  top: 24px;
+  background: var(--blue-color);
+}
+
+/* screen from 375px to 716px */
+@media only screen and (max-width: 717px) {
+  .bg-contact {
+    width: 192px;
+  }
+}

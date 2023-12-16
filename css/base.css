@@ -1,0 +1,189 @@
+/* ------------Base---------------- */
+
+@font-face {
+  font-family: "Playfair Display";
+  font-size: normal;
+  font-weight: 400;
+  src: url("/fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-size: normal;
+  font-weight: 600;
+  src: url("/fonts/PlayfairDisplay-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-size: normal;
+  font-weight: 700;
+  src: url("/fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-size: normal;
+  font-weight: 400;
+  src: url("/fonts/Lora-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-size: normal;
+  font-weight: 400;
+  src: url("/fonts/NunitoSans_10pt-Regular.ttf");
+}
+
+/*------------Typography-------------*/
+
+html {
+  /*16px*/
+  font-size: 100%;
+}
+
+body {
+  font-family: "Lora", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--txt-dark-grey-color);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.802rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.602rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.424rem;
+}
+
+h4 {
+  font-size: 1.266rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+small,
+.text_small span {
+  font-size: 0.889rem;
+  font-family: "Nunito Sans";
+}
+
+/* -----------Variables------------- */
+
+:root {
+  --blue-color: #91b9ca;
+  --white-color: #ffffff;
+  --txt-dark-grey-color: #212427;
+  --beige-color: #ffebd6;
+  --off-white-color: #fafafa;
+  --light-orange-color: #ffebd6;
+  --light-grey-color: #e2e0e0;
+  --dark-orange-color: #dda778;
+  --border-grey-color: #e2e0e0;
+
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 40px;
+  --space-xl: 48px;
+  --space-xxl: 56px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--white-color);
+  font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  z-index: 1000;
+
+  height: 100px;
+  width: 100%;
+  background-color: var(--off-white-color);
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  margin: 88px;
+  gap: 24px;
+}
+
+main > div {
+  display: flex;
+}
+
+main #about {
+  gap: 16px;
+}
+
+main #article {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* screen from 375px to 716px */
+@media only screen and (max-width: 717px) {
+  body {
+    line-height: 1.35;
+  }
+
+  h1 {
+    font-size: 1.424rem;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1.266rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+}

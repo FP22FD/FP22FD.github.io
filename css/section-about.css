@@ -1,0 +1,63 @@
+/* --------about infos------------ */
+
+.container-about {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+  background: var(--off-white-color);
+  width: 100%;
+  padding: 1.25rem;
+}
+
+.container-about > div {
+  gap: var(--space-m);
+}
+
+.about {
+  text-align: center;
+  padding: 8px;
+}
+
+.about h1 {
+  margin: var(--space-m);
+}
+
+.about p {
+  text-align: left;
+  margin-top: var(--space-xs);
+}
+
+/* screen from 717px to 923px */
+@media only screen and (max-width: 923px) {
+  .profile,
+  .about {
+    flex-wrap: wrap;
+  }
+
+  #about {
+    /* border: 10px solid rgb(69, 95, 180); */
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    border: 1px solid blue;
+  }
+}
+
+/* screen from 375px to 716px */
+@media only screen and (max-width: 717px) {
+  .profile,
+  .about {
+    flex-wrap: wrap;
+  }
+
+  #about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main #about {
+    width: fit-content;
+  }
+}
