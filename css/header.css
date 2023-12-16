@@ -20,15 +20,18 @@ nav a {
 #closeMenu {
   border: none;
   background: none;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 0px 5px 0px 5px;
-  cursor: pointer;
   display: none;
+
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px 5px 0px 5px;
 }
 
-/* screen from 375px to 716px */
-@media only screen and (max-width: 717px) {
+/* -------------------------------------- */
+
+/* screen from 375px to 1340px */
+@media only screen and (max-width: 1340px) {
   #openMenu,
   #closeMenu {
     display: block;
@@ -40,6 +43,7 @@ nav a {
 
   #closeMenu {
     position: fixed;
+
     right: 15px;
     top: 15px;
   }
@@ -50,13 +54,14 @@ nav a {
     right: 0;
 
     flex-direction: column;
-    width: 100vw;
-    height: fit-content;
-    background: rgba(255, 255, 255, 1);
     align-items: center;
     justify-content: center;
-    margin: 0;
+    height: fit-content;
     display: none;
+
+    margin: 0;
+    width: 100vw;
     transition: 0.3s;
+    background: rgba(255, 255, 255, 1);
   }
 }
