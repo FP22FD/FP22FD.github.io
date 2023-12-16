@@ -2,8 +2,8 @@
 
 document.querySelector("#openMenu").addEventListener("click", function () {
   let hamburger = document.querySelector("#menu");
-  if (hamburger.style.display === "") {
-    hamburger.style.display = "none";
+  if (hamburger.style.display === "flex") {
+    hamburger.style.display = "";
   } else {
     hamburger.style.display = "flex";
   }
