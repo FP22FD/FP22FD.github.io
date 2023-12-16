@@ -25,16 +25,12 @@
 }
 
 .icon-collection > div {
-  text-align: center;
-}
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-/* -------------------------------------- */
-
-/* screen from 375px to 1340px */
-@media only screen and (max-width: 1340px) {
-  .icon-collection > div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+  border-right: 1px solid var(--border-grey-color);
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-bottom: 8px;
 }
