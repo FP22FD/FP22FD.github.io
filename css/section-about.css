@@ -1,4 +1,6 @@
-/* --------about infos------------ */
+main #about {
+  gap: 16px;
+}
 
 .container-about {
   display: flex;
@@ -27,8 +29,6 @@
   text-align: left;
   margin-top: var(--space-xs);
 }
-
-/* -------------------------------------- */
 
 /* screen from 375px to 1340px */
 @media only screen and (max-width: 1340px) {
